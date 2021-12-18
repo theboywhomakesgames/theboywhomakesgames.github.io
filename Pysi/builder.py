@@ -22,7 +22,7 @@ for post_file in os.listdir("./blog"):
 # create the post list
 blog_list = "<ul>"
 for post, file_name in post_names:
-    blog_list = blog_list + '<li><h2><a href="/blog/{file}">{p}</a></h2></li>'.format(p=post, file=file_name)
+    blog_list = blog_list +'<li><h2><a href="/blog/{file}">{p}</a></h2></li><hr>'.format(p=post, file=file_name)
 blog_list = blog_list + "</ul>"
 wrap("../blog.html", blog_list)
 
